@@ -1,0 +1,129 @@
+/* Exam Container */
+.cep-exam-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Progress Bar */
+.cep-progress {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.cep-progress-bar {
+    height: 100%;
+    background: #4CAF50;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Question Styles */
+.cep-question {
+    margin-bottom: 30px;
+}
+
+.cep-question-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Answer Options */
+.cep-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cep-answer-option {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cep-answer-option:hover {
+    border-color: #2196F3;
+    background: #f5f9ff;
+}
+
+.cep-answer-option.selected {
+    border-color: #2196F3;
+    background: #e3f2fd;
+}
+
+/* Navigation */
+.cep-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cep-nav-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cep-nav-button:hover {
+    background: #1976D2;
+}
+
+.cep-nav-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Paywall Modal */
+.cep-paywall-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.cep-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Feedback Messages */
+.cep-feedback {
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    display: none;
+}
+
+.cep-feedback.success {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.cep-feedback.error {
+    background: #FFEBEE;
+    color: #C62828;
+}
